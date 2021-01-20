@@ -1,0 +1,13 @@
+{
+	"compilerOptions": {
+		"lib": [
+			"es2018",
+			"dom"
+		],
+		"outFile": "static/js/neurogen.js",
+		"downlevelIteration": true
+	},
+	"include": [
+		"src/libs/*/*.ts"
+	]
+}
