@@ -14,7 +14,7 @@ function prepare_world(scene: any): any {
 	// contact listener
 
 	var contact_listener = new box2d.b2ContactListener();
-	contact_listener.BeginContact = function(c) {
+	contact_listener.BeginContact = function (c) {
 		const a: any = JSON.parse(c.GetFixtureA().GetUserData());
 		const b: any = JSON.parse(c.GetFixtureB().GetUserData());
 
@@ -51,7 +51,7 @@ function prepare_world(scene: any): any {
 
 	add_road_track_segment(road_tracks_left, [0, 0], deg_to_rad(0));
 	add_road_track_segment(road_tracks_right, [0, 0], deg_to_rad(0));
-	
+
 	add_road_track_segment(road_tracks_left, [0, 0], deg_to_rad(0));
 	add_road_track_segment(road_tracks_right, [0, 0], deg_to_rad(0));
 

@@ -1,4 +1,4 @@
-function preload () {
+function preload() {
   // images
 
   this.load.image('car', 'assets/car.png')
@@ -14,6 +14,6 @@ function preload () {
     scene: this,
     paused: false,
     human_controlled_car: undefined,
-    show_sensors: false
+    show_sensors: true
   }
 }
